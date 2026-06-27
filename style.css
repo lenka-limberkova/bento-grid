@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(assets/fonts/static/DMSans-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(assets/fonts/static/DMSans-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+:root {
+  /* Purple */
+  --clr-purple-100: hsl(254, 88%, 90%);
+  --clr-purple-500: hsl(256, 67%, 59%);
+
+  /* Yellow */
+  --clr-yellow-100: hsl(31, 66%, 93%);
+  --clr-yellow-500: hsl(39, 100%, 71%);
+
+  /* Neutral */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 7%);
+}
+
+body {
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+}
