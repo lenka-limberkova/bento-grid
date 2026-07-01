@@ -33,9 +33,9 @@
   --ff-body: "DM Sans", sans-serif;
 }
 
-div {
+/* div {
     border: 1px solid red;
-}
+} */
 
 body {
     font-family: var(--ff-body);
@@ -51,6 +51,13 @@ body {
 
 }
 
+.left-column {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Desktop */
+
 @media (min-width: 768px) {
 
     body {
@@ -60,8 +67,46 @@ body {
 
        .grid-container {
         grid-template-columns: repeat(4, 1fr);
-        max-width: 1200px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "left social social schedule"
+        "left manage maintain schedule"
+        "left audience grow grow";
+        max-width: 1000px;
+        height: 100vh;
     }
+
+    .card {
+        overflow: hidden;
+    }
+
+    .left-column {
+    grid-area: left;
+}
+
+.social {
+    grid-area: social;
+}
+
+.manage {
+    grid-area: manage;
+}
+
+.maintain {
+    grid-area: maintain;
+}
+
+.schedule {
+    grid-area: schedule;
+}
+
+.audience {
+    grid-area: audience;
+}
+
+.grow {
+    grid-area: grow;
+}
 
   
 }
@@ -191,7 +236,11 @@ p {
 
 .purple-text{
     color: var(--clr-purple-500);
-    font-style: italic;
+}
+
+.italics {
+        font-style: italic;
+
 }
 
 .create img {
