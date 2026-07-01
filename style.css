@@ -33,13 +33,9 @@
   --ff-body: "DM Sans", sans-serif;
 }
 
-html {
-    font-size: 18px;
-}
-
-/* div {
+div {
     border: 1px solid red;
-} */
+}
 
 body {
     font-family: var(--ff-body);
@@ -50,27 +46,38 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 1.5rem;
     padding: 1.5rem;
+
 }
 
 @media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(4, 1fr);
+
+    body {
+        display: flex;
+            justify-content: center;
     }
+
+       .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1200px;
+    }
+
+  
 }
 
 .card {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-        padding: 2rem;
-        gap: 2rem;
+        padding: 1.5rem;
+        gap: 1.5rem;
+
 
 }
 
 h1{
-    font-size: clamp(4.5rem, 5vw, 5rem);
+    font-size: 2.7rem;
     color: var(--clr-white);
         text-align: center;
         padding: 1rem 0rem;
@@ -79,16 +86,16 @@ h1{
 }
 
 h2 {
-    font-size: clamp(2.8rem, 4vw, 2.75rem);
+    font-size: 1.4rem;
     line-height: 1;
 }
 
 p {
-    font-size: clamp(2rem, 2vw, 1.125rem);
+    font-size: 1.1rem;
 }
 
 .bigger-text {
-    font-size: clamp(4.5rem, 5vw, 5rem);
+    font-size: 2.7rem;
     color: var(--clr-black);
         text-align: left;
         line-height: 1;
@@ -107,6 +114,10 @@ p {
     color: var(--clr-yellow-500);
 }
 
+.social img {
+    width: 50%;
+}
+
 .social p{
     color: var(--clr-purple-100);
     padding-bottom: 1rem;
@@ -118,12 +129,16 @@ p {
     background-color: var(--clr-white);
 }
 
+.manage img {
+    width: 100%;
+}
+
 .maintain {
     background-color: var(--clr-yellow-500);
     align-items: left;
 }
 
-.maintain img{
+.maintain img {
     width: 60%;
 }
 
@@ -133,13 +148,13 @@ p {
     justify-content: center;
     text-align: center;
 }
-
-.schedule h2 {
-    margin-top: 1.5rem;
+.schedule img {
+    width: 100%;
 }
 
 .schedule p{
-    margin-bottom: 1.5rem;
+    line-height: 1;
+    /* font-size: 1rem; */
 }
 
 .grow {
@@ -150,22 +165,28 @@ p {
 }
 
 .grow h2{
-    padding: 0rem 4rem;
+    padding: 0rem 2rem;
     color: var(--clr-white);
-    margin-top: 1rem;
 }
 
+.grow img {
+    width: 80%;
+}
 
 .audience{
     background-color: var(--clr-white);
 }
 
-.audience img{
+.audience img {
     width: 50%;
 }
 
 .create{
     background-color: var(--clr-yellow-100);
+}
+
+.create img {
+    width: 50%;
 }
 
 .purple-text{
@@ -174,7 +195,6 @@ p {
 }
 
 .create img {
-    width: 50%;
     margin-bottom: 1rem;
 }
 
@@ -182,10 +202,8 @@ p {
     background-color: var(--clr-yellow-500);
 }
 
-.write img{
-    width: 60%;
+.write img {
+    width: 70%;
 }
-
-
 
 
